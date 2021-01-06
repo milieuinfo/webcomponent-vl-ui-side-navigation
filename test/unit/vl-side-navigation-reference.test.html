@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="../../../@webcomponents/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../../web-component-tester/browser.js"></script>
+
+  <script type="module" src="../../src/vl-side-navigation-reference.js"></script>
+</head>
+
+<body>
+  <test-fixture id="vl-side-navigation-reference-fixture">
+    <template>
+      <div is="vl-side-navigation-reference"></div>
+    </template>
+  </test-fixture>
+
+  <script>
+    suite('vl-side-navigation-reference', () => {
+      test('het side navigation attribuut wordt toegevoegd', () => {
+        const element = fixture('vl-side-navigation-reference-fixture');
+        assert.isTrue(element.hasAttribute('data-vl-scrollspy-content'));
+      });
+
+      test('de side navigation class wordt toegevoegd', () => {
+        const element = fixture('vl-side-navigation-reference-fixture');
+        assert.isTrue(element.classList.contains('js-vl-scrollspy__content'));
+      });
+    });
+  </script>
+</body>
+
+</html>
