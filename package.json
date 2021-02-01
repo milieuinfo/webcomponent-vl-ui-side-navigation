@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"@govflanders/vl-ui-side-navigation": "^3.12.3",
-		"vl-ui-core": "^7.1.0"
+		"vl-ui-core": "^7.1.1"
 	},
 	"peerDependencies": {
 		"@govflanders/vl-ui-side-navigation": "^3.12.3",

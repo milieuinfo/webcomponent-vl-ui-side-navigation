@@ -1,5 +1,5 @@
 import {nativeVlElement, define} from 'vl-ui-core';
-import 'vl-ui-side-navigation/lib/side-navigation.js';
+import '../lib/side-navigation.js';
 
 /**
  * VlSideNavigation
